@@ -1,0 +1,17 @@
+html {
+  font-size: 62.5%; // wtedy 1rem = 10px
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1124px;
+  margin: 0 auto;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+body {
+//try for exemple delete when use another design
+  width: 100vw;
+  height: 100vh;
+  @include bgImage();
+}

@@ -1,0 +1,48 @@
+//import Fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap');
+
+//need to try
+@import url('https://fontawesome.com/how-to-use/on-the-web/using-with/sass');
+
+//-------------------------------------------------------------------------------------------------------
+
+//Fonts
+$textFont: 'Open Sans',
+sans-serif;
+$logoFont: 'Charmonman',
+cursive;
+//przykład do wykorzystania
+//@include fontSettings(1.4rem, $textFont, 800, $mainTextColor);
+
+//Mixin
+@mixin fontSettings($fontSize, $fontName, $fontWeight, $fontColor) {
+  font-size: $fontSize;
+  font-family: $fontName;
+  font-weight: $fontWeight;
+  color: $fontColor;
+}
+
+//BackGround images
+@mixin bgImage() {
+  background: url("../images/background/bg.png") center repeat;
+  background-size: contain;
+}
+
+//Colors
+// nawigacja, przyciski, wyróżnienia, nagłówki ekranów
+$sideMainColor: #4F5D75;
+
+//nagłówek, kolor tekstu w kolumnach, kolor wiadomości typu success
+$mainTextColor: #2D3142;
+//kolor tekstu z wierszy w tabelach, ikony rozszerzonych funkcji
+$secondTextColor: #FDF1EC;
+//kolor wiadomości typu info
+$infoMessageColor: #BFC0C0;
+//kolor wiadomości typu warning
+$warningMessageColor: #D12421;
+
+
+//logo kolory
+$firstLogoColor: #ffffff;
+$secondLogoColor: #FDF1EC;
