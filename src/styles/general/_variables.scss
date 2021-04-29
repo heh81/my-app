@@ -25,7 +25,7 @@ cursive;
 
 //BackGround images
 @mixin bgImage() {
-  background: url("../images/background/bg.png") center repeat;
+  background: url("#") center repeat;
   background-size: contain;
 }
 
