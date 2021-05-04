@@ -1,0 +1,28 @@
+{
+  results: [
+      {
+          "word": "body",
+          "translate": "ciało",
+          "address": "#",
+          "index": "1"
+      },
+      {
+          "word": "head",
+          "translate": "głowa",
+          "address": "https://cdn.pixabay.com/photo/2016/03/05/06/06/colorful-1237242_960_720.png",
+          "index": "2"
+      },
+      {
+          "word": "ear",
+          "translate": "ucho",
+          "address": "https://cdn.pixabay.com/photo/2020/02/27/20/53/rhino-4885819_960_720.png",
+          "index": "3"
+      },
+      {
+          " word": "eye",
+          "translate": "oko",
+          "address": "https://cdn.pixabay.com/photo/2021/02/10/19/08/couple-6003221__340.png",
+          "index": "4"
+      }
+  ]
+}

@@ -10,8 +10,12 @@ html {
 }
 
 body {
-//try for exemple delete when use another design
+  //try for exemple delete when use another design
   width: 100vw;
   height: 100vh;
   @include bgImage();
+}
+
+.App {
+  font-family: 'Montserrat', sans-serif;
 }

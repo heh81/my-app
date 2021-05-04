@@ -1,0 +1,118 @@
+{
+    results: [
+        {
+            "word": "body",
+            "translate": "ciało",
+            "address": "https://cdn.pixabay.com/photo/2021/02/18/12/07/bear-6027037_960_720.png",
+            "index": 1
+        },
+        {
+            "word": "head",
+            "translate": "głowa",
+            "address": "https://cdn.pixabay.com/photo/2016/03/05/06/06/colorful-1237242_960_720.png",
+            "index": 2
+        },
+        {
+            "word": "ear",
+            "translate": "ucho",
+            "address": "https://cdn.pixabay.com/photo/2020/02/27/20/53/rhino-4885819_960_720.png",
+            "index": 3
+        },
+        {
+            " word": "eye",
+            "translate": "oko",
+            "address": "https://cdn.pixabay.com/photo/2021/02/10/19/08/couple-6003221__340.png",
+            "index": 4
+        },
+        {
+            "word": "eyebrow",
+            "translate": "brew",
+            "address": "https://cdn.pixabay.com/photo/2020/11/25/10/29/cartoon-5775231__340.png",
+            "index": 5
+        },
+        {
+            "word": "forehead",
+            "translate": "czoło",
+            "address": "https://cdn.pixabay.com/photo/2018/07/16/15/31/dog-3542195__340.png",
+            "index": 6
+        },
+        {
+            "word": "mouth",
+            "translate": "usta",
+            "address": "https://cdn.pixabay.com/photo/2017/02/15/20/58/ekg-2069872__340.png",
+            "index": 7
+        },
+        {
+            "word": "nose",
+            "translate": "nos",
+            "address": "https://cdn.pixabay.com/photo/2016/08/16/16/39/elephant-1598359__340.png",
+            "index": 8
+        },
+        {
+            "word": "moustache",
+            "translate": "wąsy",
+            "address": "https://cdn.pixabay.com/photo/2021/02/26/18/18/bird-6052752__340.png",
+            "index": 9
+        }
+        ,
+        {
+            "word": "tongue",
+            "translate": "język",
+            "address": "https://cdn.pixabay.com/photo/2021/03/29/03/54/girl-6132879__340.png",
+            "index": 10
+        }
+    ]
+}
+
+{
+    "results": [
+      {
+        "name": {
+          "title": "banan",
+          "last": "bbbbbb"
+        },
+         "login": {
+          "uuid": "0b27143d-d23b-4d59-aefb-d9d658f7a04e",
+        },
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/men/40.jpg"
+        }
+        },
+        {
+            "name": {
+              "title": "jabłko",
+              "last": "Taaaaa"
+            },
+             "login": {
+              "uuid": "0b27143d-d23b-4d59-aefb-d9d658f7a04e",
+            },
+            "picture": {
+              "large": "https://randomuser.me/api/portraits/men/40.jpg"
+            }
+            },
+            {
+                "name": {
+                  "title": "chleb",
+                  "last": "ccccccc"
+                },
+                 "login": {
+                  "uuid": "0b27143d-d23b-4d59-aefb-d9d658f7a04e",
+                },
+                "picture": {
+                  "large": "https://randomuser.me/api/portraits/men/40.jpg"
+                }
+                },
+                {
+                    "name": {
+                      "title": "noga",
+                      "last": "gggggggggg"
+                    },
+                     "login": {
+                      "uuid": "0b27143d-d23b-4d59-aefb-d9d658f7a04e",
+                    },
+                    "picture": {
+                      "large": "https://randomuser.me/api/portraits/men/40.jpg"
+                    }
+                    }
+    ]
+  }

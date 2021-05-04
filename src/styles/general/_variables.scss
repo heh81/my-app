@@ -6,6 +6,25 @@
 @import url('https://fontawesome.com/how-to-use/on-the-web/using-with/sass');
 
 //-------------------------------------------------------------------------------------------------------
+//Colors 
+
+$mainTextColor: #000;
+$secondTextColor: #FDF1EC;
+$mainColor: #2D3142;
+$sideMainColor: #4F5D75;
+
+
+//kolor wiadomości typu info
+$infoMessageColor: #BFC0C0;
+$warningMessageColor: #D12421;
+
+
+//logo kolory
+$firstLogoColor: #ffffff;
+$secondLogoColor: #FDF1EC;
+
+
+////////////////
 
 //Fonts
 $textFont: 'Open Sans',
@@ -28,21 +47,3 @@ cursive;
   background: url("#") center repeat;
   background-size: contain;
 }
-
-//Colors
-// nawigacja, przyciski, wyróżnienia, nagłówki ekranów
-$sideMainColor: #4F5D75;
-
-//nagłówek, kolor tekstu w kolumnach, kolor wiadomości typu success
-$mainTextColor: #2D3142;
-//kolor tekstu z wierszy w tabelach, ikony rozszerzonych funkcji
-$secondTextColor: #FDF1EC;
-//kolor wiadomości typu info
-$infoMessageColor: #BFC0C0;
-//kolor wiadomości typu warning
-$warningMessageColor: #D12421;
-
-
-//logo kolory
-$firstLogoColor: #ffffff;
-$secondLogoColor: #FDF1EC;
