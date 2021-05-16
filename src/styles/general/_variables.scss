@@ -2,27 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap');
 
-//need to try
 @import url('https://fontawesome.com/how-to-use/on-the-web/using-with/sass');
 
-//-------------------------------------------------------------------------------------------------------
 //Colors 
 
 $mainTextColor: #000;
 $secondTextColor: #FDF1EC;
 $mainColor: #2D3142;
 $sideMainColor: #4F5D75;
-
-
-//kolor wiadomości typu info
 $infoMessageColor: #BFC0C0;
 $warningMessageColor: #D12421;
-
-
-//logo kolory
 $firstLogoColor: #ffffff;
-$secondLogoColor: #FDF1EC;
-
 
 ////////////////
 
@@ -42,8 +32,12 @@ cursive;
   color: $fontColor;
 }
 
-//BackGround images
-@mixin bgImage() {
-  background: url("#") center repeat;
-  background-size: contain;
-}
+
+//media
+$mobile: 640px;
+$tablet: 1022px;
+$desktop: 1200px;
+
+// .hidden {
+//     display: none;
+// }
