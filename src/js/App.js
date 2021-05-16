@@ -1,52 +1,53 @@
-import React, { useEffect, useState } from "react";
-// COMPONENTS
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import ButtonFetchWord from "./components/ButtonFetchWord";
-import WordsList from "./components/WordsList";
-// STYLES
-//import '../scss/main.scss';
+import React, { useState } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-// DATA
-//import GameDataset from './data/dataset';
+// COMPONENTS
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Start from "./components/Start";
+import Memory from "./components/Memory";
+import Dictation from "./components/Dictation";
 
 
 
 // APP
-
-const API = "data/db.json"
-
 const App = () => {
-    const [word, setWord] = useState(null)
 
-    const handleWordFetch = () => {
-        //console.log("klik")
-        fetch(API)
-            // .then(response => {
-            //     if (response.ok) {
-            //         return response;
-            //     }
-            //     throw Error("Błąd!!!")
-            // })
-            .then(response => response.json())
-            .then(data => {
-                //  console.log(data);
-                setWord(data.results)
-            })
-            .catch(error => console.log(error))
-    }
+    // const [test, setTest] = useState(null)
+    // const API = "data/db.json"
+
+    // const testEwa = () => {
+    //     // console.log("klik")
+    //     fetch(API)
+    //         .then(response => {
+    //             if (response.ok) {
+    //                 return response;
+    //             }
+    //             throw Error("Błąd!!!")
+    //         })
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             console.log(data);
+    //             setTest(data.results)
+    //         })
+    //         .catch(error => console.log(error));
+    // }
 
     return (
-        <>
+        <BrowserRouter>
+
             <div className="App">
 
-                <Navbar />
-                <div style={{ height: "200px" }}> </div>
-                <ButtonFetchWord click={handleWordFetch} />
-                {word ? < WordsList word={word} /> : word}
+                <Header />
+                <Switch>
+                    <Route exact path="/start" component={Start} />
+                    <Route exact path="/memory" component={Memory} />
+                    <Route exact path="/dyktando" component={Dictation} />
+                    {/* <Route path="/dyktando" component={() => <Dyktando aaa={test} bbb={testEwa} />} /> */}
+                </Switch>
                 <Footer />
             </div>
-        </>
+        </BrowserRouter>
     )
 }
 
