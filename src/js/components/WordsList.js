@@ -5,17 +5,19 @@ import React from 'react';
 const WordsList = (props) => {
     console.log(props.word);
 
-    const word = props.word.map(word => (
-        <div key={word.index}>
-            <h4>{`${word.word} `}</h4>
-            <img src={word.address} alt={word.word} />
-            <h4>{`${word.translate} `}</h4>
 
-        </div>
-    ))
+
+
     return (
         <div className="word">
-            {word}
+            <div className="wordList-boxes">
+                <div className="wordList-box" key={props.word.index}>
+                    <img className="wordList-image" src={props.word.address} alt={props.word.word} />
+                    <h1 className="wordList-title-en">{props.word.word}</h1>
+                    <h4 className="wordList-title-pl">{props.word.translate}</h4>
+
+                </div>
+            </div>
         </div>
     );
 }
