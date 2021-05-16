@@ -1,0 +1,20 @@
+.wordList {
+    &-boxes {
+        display: inline-block;
+    }
+
+    &-image {
+        height: 50vh;
+
+    }
+
+    &-title-en {
+        @include fontSettings(4rem, $textFont, 800, $mainTextColor);
+        margin: 1rem;
+    }
+
+    &-title-pl {
+        @include fontSettings(1.4rem, $textFont, 400, $mainTextColor);
+    }
+
+}
