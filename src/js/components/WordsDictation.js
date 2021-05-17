@@ -9,29 +9,29 @@ const WordDictation = (props) => {
 
     const handleChange = (evt) => {
         evt.preventDefault();
-        alert(`Wpisz tłumaczenie`)
+        alert(`Wpisz poprawne tłumaczenie`)
     }
     console.log(wordTranslate);
 
 
     useEffect(() => {
-        if (wordTranslate === props.word.translate) setTimeout(window.alert, 1000, "GRATULACJE!");
-        if (wordTranslate === props.word.translate) setTimeout(() => setWordTranslate([]), 1500);
+        if (wordTranslate === props.word.word) setTimeout(window.alert, 1000, "GRATULACJE!");
+        if (wordTranslate === props.word.word) setTimeout(() => setWordTranslate([]), 1500);
 
     }, [wordTranslate]);
 
 
     return (
-        <div className="word">
+        <div className="word ">
             <div className="wordList-boxes">
                 <div className="wordList-box" key={props.word.index}>
                     <img className="wordList-image" src={props.word.address} alt={props.word.word} />
-                    <h1 className="wordList-title-en">{props.word.word}</h1>
+                    <h1 className="wordList-title-en">{props.word.translate}</h1>
 
-                    <form onSubmit={handleChange}>
+                    <form className="wordList-form" onSubmit={handleChange}>
                         <label>
                             Wpisz Tłumaczenie:
-        <input
+        <input className="wordList-translate"
                                 type="text"
                                 value={wordTranslate}
                                 onChange={e => setWordTranslate(e.target.value)}

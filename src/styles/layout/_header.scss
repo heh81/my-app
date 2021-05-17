@@ -11,7 +11,7 @@
     }
 
     &-logo {
-        @include fontSettings(1.4rem, $textFont, 600, $secondTextColor);
+        @include fontSettings(2rem, $logoFont, 700, $mainTextColor);
         justify-self: start;
         //margin-left: 2rem;
         cursor: pointer;
@@ -19,8 +19,9 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         // height: 10rem;
-        line-height: 5rem;
+        line-height: 6rem;
         width: 20rem;
+
     }
 
     &-list {

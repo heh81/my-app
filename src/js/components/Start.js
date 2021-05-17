@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ButtonFetchWord from "./ButtonFetchWord";
+import ButtonFetch from "./ButtonFetch";
 import WordsList from "./WordsList";
 
 const Start = () => {
@@ -25,12 +25,12 @@ const Start = () => {
     }
     return (
 
-        <>
-            <ButtonFetchWord click={handleWord} />
+        <div>
+            <ButtonFetch click={handleWord} description="Wylosuj słówko" />
             {word ? < WordsList word={word} /> : word}
 
 
-        </>)
+        </div>)
 
 }
 

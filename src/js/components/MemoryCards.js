@@ -24,7 +24,7 @@ const MemoryCard = (props) => {
         if (openedCard.length === 2) setTimeout(() => setOpenedCard([]), 1000);
         if (matched.length === 4) setTimeout(window.alert, 1000, "GRATULACJE!");
         if (matched.length === 4) setTimeout(() => setMatched([]), 1500);
-        if (matched.length === 4) setTimeout(() => setOpenedCard([]), 1500);
+
 
     }, [openedCard]);
 

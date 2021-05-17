@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ButtonFetchCard from "./ButtonFetchCard";
+import ButtonFetch from "./ButtonFetch";
 import MemoryCard from "./MemoryCards"
 
 
@@ -47,12 +47,12 @@ const Memory = () => {
 
     return (
 
-        <>
-            <ButtonFetchCard click={handleCard} />
+        <div className="container">
+            <ButtonFetch click={handleCard} description="Wylosuj grę" />
             {card ? < MemoryCard card={card} /> : card}
 
 
-        </>)
+        </div>)
 
 }
 

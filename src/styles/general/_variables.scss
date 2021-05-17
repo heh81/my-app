@@ -1,8 +1,6 @@
 //import Fonts
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap');
-
-@import url('https://fontawesome.com/how-to-use/on-the-web/using-with/sass');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 //Colors 
 
@@ -19,8 +17,10 @@ $firstLogoColor: #ffffff;
 //Fonts
 $textFont: 'Open Sans',
 sans-serif;
-$logoFont: 'Charmonman',
+
+$logoFont: 'Permanent Marker',
 cursive;
+
 //przykład do wykorzystania
 //@include fontSettings(1.4rem, $textFont, 800, $mainTextColor);
 

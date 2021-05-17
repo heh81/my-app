@@ -4,11 +4,11 @@ export const MenuItems = [
         url: "/start",
         cName: "nav-links"
     },
-    {
-        title: "Dopasuj",
-        url: "/dopasuj",
-        cName: "nav-links"
-    },
+    // {
+    //     title: "Dopasuj",
+    //     url: "/dopasuj",
+    //     cName: "nav-links"
+    // },
     {
         title: "Memory",
         url: "/memory",

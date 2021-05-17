@@ -1,11 +1,11 @@
 .footer {
-
-    //text-align: center;
-    color: $mainTextColor;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6rem;
+    @include fontSettings(1rem, $textFont, 400, $mainTextColor);
     line-height: 1.5rem;
-    font-size: 1rem;
-    font-weight: 400;
-    background-color: $secondTextColor;
+    background-color: $infoMessageColor;
 
     &-top-seperator {
         width: 100%;
@@ -14,9 +14,11 @@
         margin-top: 2px;
         background-color: #2D3142;
     }
-}
 
-.container {
-    flex-direction: column;
-    justify-items: center;
+    &-link {
+
+        &:hover {
+            @include fontSettings(1rem, $textFont, 600, $warningMessageColor);
+        }
+    }
 }

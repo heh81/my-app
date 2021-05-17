@@ -9,7 +9,7 @@ const WordsList = (props) => {
 
 
     return (
-        <div className="word">
+        <div className="wordList">
             <div className="wordList-boxes">
                 <div className="wordList-box" key={props.word.index}>
                     <img className="wordList-image" src={props.word.address} alt={props.word.word} />

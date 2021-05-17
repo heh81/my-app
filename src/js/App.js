@@ -36,7 +36,7 @@ const App = () => {
     return (
         <BrowserRouter>
 
-            <div className="App">
+            <div className="app">
 
                 <Header />
                 <Switch>

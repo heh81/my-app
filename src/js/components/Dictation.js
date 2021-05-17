@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import WordDictation from "./WordsDictation";
-import ButtonFetchWord from "./ButtonFetchWord"
+import ButtonFetch from "./ButtonFetch"
 
 
 const Dictation = () => {
@@ -28,13 +28,9 @@ const Dictation = () => {
 
     return (
 
-        <div>
-
-            <ButtonFetchWord click={handleWordDictation} />
+        <div >
+            <ButtonFetch click={handleWordDictation} description="Wylosuj słówko" />
             {wordDictation ? < WordDictation word={wordDictation} /> : wordDictation}
-
-
-
         </div>
     )
 }

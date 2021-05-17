@@ -1,3 +1,10 @@
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+}
+
 html {
   font-size: 62.5%; // wtedy 1rem = 10px
 
@@ -5,17 +12,27 @@ html {
 
 body {
   box-sizing: border-box;
-  margin: 0 auto;
-  width: 100vw;
+  //width: 100vw;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://dzieciakwszkole.pl/pol_pm_Zeszyt-A5-60k-kratka-Rainbow-zolte-HERLITZ-11107_1.jpg");
+  background-size: cover;
+}
+
+
 .container {
-  //max-width: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 1200px;
+  display: inline-block;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  min-height: 100%;
+  position: relative;
 }
