@@ -18,14 +18,14 @@ const Start = () => {
             .then(response => response.json())
             .then(data => {
                 console.log(data);
-                const wynikLosowania = Math.floor(Math.random() * 3);
-                setWord(data.results[wynikLosowania])
+                const resultRamdom = Math.floor(Math.random() * 4);
+                setWord(data.results[resultRamdom])
             })
             .catch(error => console.log(error));
     }
     return (
 
-        <div>
+        <div className="start">
             <ButtonFetch click={handleWord} description="Wylosuj słówko" />
             {word ? < WordsList word={word} /> : word}
 

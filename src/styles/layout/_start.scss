@@ -1,3 +1,7 @@
+.start {
+    overflow: auto;
+}
+
 .wordList {
     &-boxes {
         display: inline-block;
@@ -5,7 +9,6 @@
 
     &-image {
         height: 50vh;
-
     }
 
     &-title-en {
@@ -14,7 +17,7 @@
     }
 
     &-title-pl {
-        @include fontSettings(1.4rem, $textFont, 400, $mainTextColor);
+        @include fontSettings(2rem, $textFont, 400, $mainTextColor);
     }
 
 }

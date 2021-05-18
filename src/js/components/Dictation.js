@@ -20,15 +20,15 @@ const Dictation = () => {
             .then(response => response.json())
             .then(data => {
                 console.log(data);
-                const wynikLosowania = Math.floor(Math.random() * 3);
-                setWordDictation(data.results[wynikLosowania])
+                const resultRamdom = Math.floor(Math.random() * 4);
+                setWordDictation(data.results[resultRamdom])
             })
             .catch(error => console.log(error));
     }
 
     return (
 
-        <div >
+        <div className="dictation">
             <ButtonFetch click={handleWordDictation} description="Wylosuj słówko" />
             {wordDictation ? < WordDictation word={wordDictation} /> : wordDictation}
         </div>

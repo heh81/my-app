@@ -1,17 +1,33 @@
+.dictation {
+    overflow: auto;
+}
+
 label {
     display: flex;
     flex-direction: column;
     position: relative;
+    @include fontSettings(1.4rem, $textFont, 400, $mainTextColor);
 }
 
-.wordList-translate {
-    background-color: white;
-    position: absolute;
-    opacity: 1;
-    padding: 7px 15px;
-    margin-left: 25%;
-    cursor: pointer;
-    transition: .3s;
-    border: 2px solid #4F5D75;
-    width: 50%;
+.wordList {
+    &-image {
+        height: 40vh;
+    }
+
+    &-title-en {
+        @include fontSettings(3rem, $textFont, 800, $mainTextColor);
+    }
+
+    &-translate {
+        margin-top: 1rem;
+        background-color: white;
+        position: absolute;
+        opacity: 1;
+        padding: 7px 15px;
+        cursor: pointer;
+        transition: .3s;
+        border: 2px solid #4F5D75;
+        width: 100%;
+        margin-left: -8%;
+    }
 }

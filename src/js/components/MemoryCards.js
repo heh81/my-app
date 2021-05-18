@@ -33,39 +33,36 @@ const MemoryCard = (props) => {
 
     return (
 
-        <>
-            <div className="memor">
-                <div className="memory container" >
-                    {pairOfCard.map((el, index) => {
-                        //lets flip the card
 
-                        let isFlipped = false;
+        <div className="memory container" >
+            {pairOfCard.map((el, index) => {
+                //lets flip the card
 
-                        if (openedCard.includes(index)) isFlipped = true;
-                        if (matched.includes(el.index)) isFlipped = true;
-                        return (
-                            <div
-                                className={`memory-card ${isFlipped ? "flipped" : ""} `}
-                                key={index}
-                                onClick={() => flipCard(index)}
-                            >
-                                <div className="memory-inner">
-                                    <div className="memory-front">
-                                        <img
-                                            src={el.address}
-                                            alt={el.translate}
-                                            width="100"
-                                        />
-                                    </div>
-                                    <div className="memory-back"></div>
-                                </div>
+                let isFlipped = false;
+
+                if (openedCard.includes(index)) isFlipped = true;
+                if (matched.includes(el.index)) isFlipped = true;
+                return (
+                    <div
+                        className={`memory-card ${isFlipped ? "flipped" : ""} `}
+                        key={index}
+                        onClick={() => flipCard(index)}
+                    >
+                        <div className="memory-inner">
+                            <div className="memory-front">
+                                <img
+                                    src={el.address}
+                                    alt={el.translate}
+                                    width="100"
+                                />
                             </div>
-                        );
-                    })}
-                </div>
-            </div>
+                            <div className="memory-back"></div>
+                        </div>
+                    </div>
+                );
+            })}
+        </div>
 
-        </>
     );
 }
 

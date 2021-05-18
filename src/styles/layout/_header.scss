@@ -1,6 +1,7 @@
 .header {
     background-color: $mainColor;
     width: 100vw;
+    position: relative;
 
 
     &-wrapper {
@@ -102,7 +103,7 @@ input:checked~.c-checkbox .hamburger-menu1 {
 
     .nav-change {
         width: 100%;
-        height: 50%;
+        height: 300%;
         transition: height 2s;
         visibility: visible;
         background-color: $mainColor;
@@ -111,6 +112,7 @@ input:checked~.c-checkbox .hamburger-menu1 {
         bottom: 0px;
         left: 0px;
         right: 0px;
+        z-index: 3;
     }
 
     .navlist-change {
