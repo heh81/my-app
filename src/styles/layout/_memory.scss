@@ -1,5 +1,13 @@
 .game {
-    overflow: auto;
+
+    @media (max-width: $tablet) {
+        margin-bottom: 100px;
+    }
+
+    @media (max-width: $mobile) {
+        margin-bottom: 100px;
+    }
+
 }
 
 .memory {
@@ -17,13 +25,15 @@
 
     &-card {
         height: 150px;
-        width: 150px;
+        // width: 150px;
         border-radius: 2px;
         background: #000;
         cursor: pointer;
         background: none;
         border: none;
         outline: none;
+        margin: 0 10%;
+
     }
 
     &-front,
