@@ -16,7 +16,7 @@ const Footer = () => {
                     If you spot any bug or have feedback, please open an isssue on <a className="footer-link" href={"https://github.com/heh81/my-app"} rel="noreferrer" target={"_blank"}>GitHub</a>
                 </div>
                 <div className="footer-linkedin">
-                    <a className="footer-link" href="https://www.linkedin.com/in/ewa-brzuszczak/" rel="noreferrer" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a className="footer-link" href="https://www.linkedin.com/in/ewa-brzuszczak/" rel="noreferrer" target="_blank" >LinkedIn</a>
                 </div>
             </div>
         </footer>
