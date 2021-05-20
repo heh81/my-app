@@ -16,16 +16,22 @@ const MemoryCard = (props) => {
         if (openedCard < 2) return;
         const firstMatched = pairOfCard[openedCard[0]];
         const secondMatched = pairOfCard[openedCard[1]];
+
         if (firstMatched === secondMatched)
             setMatched([...matched, firstMatched.index]);
+        console.log(firstMatched.index);
         if (openedCard.length === 2) setTimeout(() => setOpenedCard([]), 1000);
 
     };
     useEffect(foo, [openedCard]);
 
-    if (matched.length === 4) setTimeout(window.alert, 1000, "GRATULACJE!");
-    if (matched.length === 4) setTimeout(() => setMatched([]), 1500);
+    const foo2 = () => {
 
+
+        if (matched.length === 4 && matched.includes(1, 2, 3, 4)) setTimeout(window.alert, 1000, "GRATULACJE!");
+        if (matched.length === 4) setTimeout(() => setMatched([]), 1500);
+    };
+    useEffect(foo2, [matched]);
 
     console.log(matched);
     console.log(openedCard);

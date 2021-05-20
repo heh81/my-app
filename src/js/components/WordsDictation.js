@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 
 
 const WordDictation = (props) => {
-    console.log(props.word);
 
     const [wordTranslate, setWordTranslate] = useState([])
 
@@ -11,12 +10,12 @@ const WordDictation = (props) => {
         evt.preventDefault();
         if (wordTranslate === props.word.word) {
             setTimeout(window.alert, 1000, "GRATULACJE!");
+            setTimeout(() => setWordTranslate([]), 1500);
         } else {
             alert(`Wpisz poprawne tłumaczenie`)
         };
 
     }
-    console.log(wordTranslate);
 
 
     const bar = () => {
@@ -26,8 +25,7 @@ const WordDictation = (props) => {
             setTimeout(() => setWordTranslate([]), 1500);
     };
 
-    useEffect(bar, [wordTranslate]);
-
+    useEffect(bar, [wordTranslate, props.word.word]);
 
     return (
         <div className="word ">
