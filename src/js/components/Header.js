@@ -16,7 +16,7 @@ const Header = () => {
                 <div className="hamburger-menu">
                     <label>
                         <input type="checkbox" id="hamburgerMenu" onClick={onHamburgerToggle} ></input>
-                        <div class="c-checkbox">
+                        <div className="c-checkbox">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -31,8 +31,7 @@ const Header = () => {
                         <ul className="header-list">
                             {MenuItems.map((item) => {
                                 return (
-                                    <NavLink className={item.cName, "header-list-link"
-                                    } to={item.url} key={item.url} > { item.title}
+                                    <NavLink className="header-list-link" to={item.url} key={item.url} > { item.title}
                                     </NavLink>
                                 )
                             })}

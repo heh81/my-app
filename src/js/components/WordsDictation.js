@@ -9,16 +9,24 @@ const WordDictation = (props) => {
 
     const handleChange = (evt) => {
         evt.preventDefault();
-        alert(`Wpisz poprawne tłumaczenie`)
+        if (wordTranslate === props.word.word) {
+            setTimeout(window.alert, 1000, "GRATULACJE!");
+        } else {
+            alert(`Wpisz poprawne tłumaczenie`)
+        };
+
     }
     console.log(wordTranslate);
 
 
-    useEffect(() => {
-        if (wordTranslate === props.word.word) setTimeout(window.alert, 1000, "GRATULACJE!");
-        if (wordTranslate === props.word.word) setTimeout(() => setWordTranslate([]), 1500);
+    const bar = () => {
+        if (wordTranslate === props.word.word)
+            setTimeout(window.alert, 1000, "GRATULACJE!");
+        if (wordTranslate === props.word.word)
+            setTimeout(() => setWordTranslate([]), 1500);
+    };
 
-    }, [wordTranslate]);
+    useEffect(bar, [wordTranslate]);
 
 
     return (

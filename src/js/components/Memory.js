@@ -18,7 +18,6 @@ const Memory = () => {
             })
             .then(response => response.json())
             .then(data => {
-                /////
 
                 let arr = [];
                 while (arr.length < 4) {
@@ -50,8 +49,6 @@ const Memory = () => {
         <div className="container game">
             <ButtonFetch click={handleCard} description="Wylosuj grę" />
             {card ? < MemoryCard card={card} /> : card}
-
-
         </div>)
 
 }
