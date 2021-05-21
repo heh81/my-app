@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-
 const MemoryCard = (props) => {
     const [openedCard, setOpenedCard] = useState([]);
     const [matched, setMatched] = useState([]);
 
-    console.log(props);
     const pairOfCard = [...props.card];
 
     function flipCard(index) {
@@ -18,31 +16,30 @@ const MemoryCard = (props) => {
         const secondMatched = pairOfCard[openedCard[1]];
 
         if (firstMatched === secondMatched)
-            setMatched([...matched, firstMatched.index]);
+            setMatched((matched) => [...matched, firstMatched.index]);
+        //setMatched([...matched, firstMatched.index]);
         console.log(firstMatched.index);
         if (openedCard.length === 2) setTimeout(() => setOpenedCard([]), 1000);
-
     };
     useEffect(foo, [openedCard]);
 
     const foo2 = () => {
-
-
-        if (matched.length === 4 && matched.includes(1, 2, 3, 4)) setTimeout(window.alert, 1000, "GRATULACJE!");
+        //if (matched.length === 4 && matched.includes(1, 2, 3, 4)) 
+        if (matched.length === 4) setTimeout(alert, 1000, "GRATULACJE!");
         if (matched.length === 4) setTimeout(() => setMatched([]), 1500);
+
     };
     useEffect(foo2, [matched]);
 
+    //console.log(openedCard);
     console.log(matched);
-    console.log(openedCard);
+
+
 
     return (
-
-
         <div className="memory container" >
             {pairOfCard.map((el, index) => {
-                //lets flip the card
-
+                //flip the card
                 let isFlipped = false;
 
                 if (openedCard.includes(index)) isFlipped = true;

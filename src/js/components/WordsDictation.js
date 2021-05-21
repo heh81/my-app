@@ -12,7 +12,8 @@ const WordDictation = (props) => {
             setTimeout(window.alert, 1000, "GRATULACJE!");
             setTimeout(() => setWordTranslate([]), 1500);
         } else {
-            alert(`Wpisz poprawne tłumaczenie`)
+            alert(`Wpisz poprawne tłumaczenie`);
+            setTimeout(() => setWordTranslate([]), 500);
         };
 
     }

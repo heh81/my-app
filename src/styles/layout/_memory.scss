@@ -19,9 +19,9 @@
         grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     }
 
-    @media (max-width: $mobile) {
-        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-    }
+    // @media (max-width: $mobile) {
+    //     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    // }
 
     &-card {
         height: 150px;
@@ -33,6 +33,14 @@
         border: none;
         outline: none;
         margin: 0 10%;
+
+        @media (max-width: $tablet) {
+            height: 120px;
+        }
+
+        @media (max-width: $mobile) {
+            height: 100px;
+        }
 
     }
 
